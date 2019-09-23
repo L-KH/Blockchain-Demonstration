@@ -8,10 +8,9 @@ Create two or more Clients and send transaction into Node that you create also (
 this is the very basic demo that you can do. I will let you discover the rest.
 
 
-<img src="https://i.imgur.com/CBihcD3.png" alt="Make1">
-<img src="https://i.imgur.com/rA9buH5.png" alt="Make2">
-<img src="https://i.imgur.com/vDMdN5Z.png" alt="Mine">
-
+https://i.imgur.com/CBihcD3.png
+https://i.imgur.com/rA9buH5.png
+https://i.imgur.com/vDMdN5Z.png
 
 
 
