@@ -1,10 +1,10 @@
 
-## Blockchain Demonstration
+# Blockchain Demonstration
 
 A web-based demonstration of blockchain concepts.
 This is a very basic visual introduction to the concepts behind a blockchain.
 
-## How to use ?
+# How to use ?
 
 Create two or more Clients and send transaction into Node that you create also (can be more than one) submit transaction of clients and go to Blockchain Node Site to refresh and Mine the transcations. once you mine the block you will check down history of transactions that you have done transactions and also the Node receive 1 of crypto.
 this is the very basic demo that you can do. I will let you discover the rest.
@@ -17,23 +17,23 @@ this is the very basic demo that you can do. I will let you discover the rest.
 
 
 
-## FAQ
+# FAQ
 
-When or why I would use this?
+### When or why I would use this?
 
 You should use this if you want to understand altcoins wallet, payment processor, or bitcoin merchant portal in javascript. You might also be interested in why decentralized networks or p2p applications are useful, or what advantages they have; this project seems like a good way to learn about that.
 
 
-What is smallest definition of the blockchain ?
+### What is smallest definition of the blockchain ?
 
 Blockchain is a distributed, decentralized, public ledger.
 
 
-What is the block chain actually for?
+### What is the block chain actually for?
 
 The blockchain is for authorizing payments of a cryptocurrency between two peers without the need for a centralized 3rd party approving of the transaction.
 
 
-Why the hell should I care about the blockchain?
+### Why the hell should I care about the blockchain?
 
 Blockchain facilitates trade over a network. Imagine a metal as scarce as gold with a magical property of "can be transported over a communications channel". This has implications with respect to individual rights, the world economy, and the way we monetize and transfer value at a level higher than bartering directly for goods.
