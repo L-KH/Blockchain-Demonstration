@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Blockchain Client</title>
+
+    <link rel="stylesheet" href="/static/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/vendor/DataTables/css/datatables.min.css">
+    <link rel="stylesheet" href="/static/vendor/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/custom.css">
+<style>
+
+div {
+  font-family: Century;
+}</style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #483D8B;">
+        <div class="container">
+            <a href="#" class="navbar-brand">Blockchain Client Side</a>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="/" class="nav-link">Wallet Generator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/make/transaction" class="nav-link">Make Transaction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/view/transactions" class="nav-link">View Transactions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="card-body">
+                    <h4 class="card-title">Wallet Generator</h4>
+                    <p class="card-text">Click on the button below to generate your blockchain wallet</p>
+                    <input type="button" class="btn btn-primary btn-lg" value="Generate Wallet">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+          <label class="col-sm-2">Public Key:</label>
+          <div class="col-sm-10">
+            <textarea id="public_key" rows="5" class="form-control" readonly></textarea>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+          <label class="col-sm-2">Private Key:</label>
+          <div class="col-sm-10">
+            <textarea id="private_key" rows="5" class="form-control" readonly></textarea>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="row" id="warning" style="display:none">
+          <div class="col-sm-12">
+            <div class="alert alert-warning" role="alert">
+              <h4>Alert!</h4>
+              <ul>
+                <li>Save you private and public keys. You can't recover them</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="/static/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/vendor/DataTables/js/datatables.min.js"></script>
+    <script src="/static/vendor/DataTables/js/ellipsis.js"></script>
+
+    <script>
+        $(function() {
+            $('input').click(function() {
+
+                $.ajax({
+                    url: '/wallet/new',
+                    type: 'GET',
+                    success: function(response) {
+                        document.getElementById("public_key").innerHTML = response['public_key'];
+                        document.getElementById("private_key").innerHTML = response['private_key'];
+                        document.getElementById("warning").style.display = "block";
+                    },
+                    error: function(error) {
+                        console.log(error);
+                    }
+                });
+            });
+        });
+
+    </script>
+
+</body>
+</html>
