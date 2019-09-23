@@ -22,7 +22,7 @@ MINING_SENDER = "The Blockchain"
 MINING_REWARD = 1
 MINING_DIFFICULTY = 2
 
-
+# i will add comments to explain asap
 class Blockchain:
 
     def __init__(self):
@@ -43,9 +43,7 @@ class Blockchain:
             raise ValueError('Invalid URL')
 
     def create_block(self, nonce, previous_hash):
-        """
-        Add a block of transactions to the blockchain
-        """
+        # add block of transaction
         block = {'block_number': len(self.chain) + 1,
                  'timestamp': time(),
                  'transactions': self.transactions,
@@ -86,7 +84,7 @@ class Blockchain:
 
     @staticmethod
     def hash(block):
-        # We must to ensure that the Dictionary is ordered, otherwise we'll get inconsistent hashes
+        # must to ensure that the Dictionary is ordered, otherwise we'll get inconsistent hashes
         block_string = json.dumps(block, sort_keys=True).encode('utf8')
         h = hashlib.new('sha256')
         h.update(block_string)
@@ -142,7 +140,7 @@ class Blockchain:
             'amount': amount
         })
 
-        # Reward for mining a block
+        # Reward for mining a block we make 1 , create your own blockchain and make it more ;)
         if sender_public_key == MINING_SENDER:
             self.transactions.append(transaction)
             return len(self.chain) + 1
@@ -159,7 +157,7 @@ class Blockchain:
 # Instantiate the Blockchain
 blockchain = Blockchain()
 
-# Instantiate the Node
+
 app = Flask(__name__)
 CORS(app)
 
@@ -193,7 +191,6 @@ def get_chain():
 
 @app.route('/mine', methods=['GET'])
 def mine():
-    # We run the proof of work algorithm
     nonce = blockchain.proof_of_work()
 
     blockchain.submit_transaction(sender_public_key=MINING_SENDER,
