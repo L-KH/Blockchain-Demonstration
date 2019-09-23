@@ -7,15 +7,15 @@ This is a very basic visual introduction to the concepts behind a blockchain.
 Create two or more Clients and send transaction into Node that you create also (can be more than one) submit transaction of clients and go to Blockchain Node Site to refresh and Mine the transcations. once you mine the block you will check down history of transactions that you have done transactions and also the Node receive 1 of crypto.
 this is the very basic demo that you can do. I will let you discover the rest.
 
+![github-small](https://i.imgur.com/CBihcD3.png)
 
-https://i.imgur.com/CBihcD3.png
-https://i.imgur.com/rA9buH5.png
-https://i.imgur.com/vDMdN5Z.png
+![github-small](https://i.imgur.com/rA9buH5.png)
+
+![github-small](https://i.imgur.com/vDMdN5Z.png)
 
 
 
-
-##FAQ
+## FAQ
 
 
 <b>When or why I would use this?</b>
