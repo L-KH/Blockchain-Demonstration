@@ -37,3 +37,8 @@ The blockchain is for authorizing payments of a cryptocurrency between two peers
 ### Why the hell should I care about the blockchain?
 
 Blockchain facilitates trade over a network. Imagine a metal as scarce as gold with a magical property of "can be transported over a communications channel". This has implications with respect to individual rights, the world economy, and the way we monetize and transfer value at a level higher than bartering directly for goods.
+
+
+
+-----------------------------------------------------------------
+My ETH Adress : 0x42C975dDC7d7e9757f246DDAE552F63A5b4429F7
