@@ -10,12 +10,8 @@ Create two or more Clients and send transaction into Node that you create also (
 this is the very basic demo that you can do. I will let you discover the rest.
 
 ![github-small](https://i.imgur.com/CBihcD3.png)
-
 ![github-small](https://i.imgur.com/rA9buH5.png)
-
 ![github-small](https://i.imgur.com/vDMdN5Z.png)
-
-
 
 # FAQ
 
