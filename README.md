@@ -27,7 +27,7 @@ Blockchain is a distributed, decentralized, public ledger.
 
 ### What is the block chain actually for?
 
-The blockchain is for authorizing payments of a cryptocurrency between two peers without the need for a centralized 3rd party approving of the transaction.
+blockchain is only for "storing" the transaction history and "chain" or link them together using cryptography and in coins such as bitcoin by doing "work" hence the term proof of work. so blockchain only works as the public immutable ledger that only grows. the "authorization" happens by the user when they provide a digital signature.
 
 
 ### Why the hell should I care about the blockchain?
